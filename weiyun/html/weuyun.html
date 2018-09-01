@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微云</title>
+    <link rel="stylesheet" href="../css/weiy.css">
+</head>
+<body>
+    <section id="yun">
+        <header id="head">
+            <div class="head-logo fl-l">云盘</div>
+            <div class="head-info fl-r">
+                <div class="head-info-tab fl-l">
+                    <a href="javascript:;" class="info-tab-img fl-l">头像</a>
+                    <a href="javascript:;" class="info-tab-more fl-l">更多</a>
+                </div>
+                <a href="javascript:;" class="head-info-set fl-l">设置</a>
+            </div>
+        </header>
+        <div id="btn-box">
+            <div class="btn-box-left fl-l">
+                <a href="javascript:;" class="btn-box-download">
+                    <span></span>
+                    下载
+                </a>
+                <a href="javascript:;" class="btn-box-share">
+                    <span></span>
+                    分享
+                </a>
+                <a href="javascript:;" class="btn-box-mobile">
+                    <span></span>
+                    移动到
+                </a>
+                <a href="javascript:;" class="btn-box-rename">
+                    <span></span>
+                    重命名
+                </a>
+                <a href="javascript:;" class="btn-box-delete">
+                    <span></span>
+                    删除
+                </a>
+                <a href="javascript:;" class="btn-box-newFolder">
+                    <span></span>
+                    新建文件夹
+                </a>
+                <a href="javascript:;" class="btn-box-refresh">
+                    <span></span>
+                    刷新
+                </a>
+            </div>
+            <div class="btn-box-right fl-r">
+                <a href="javascript:;" class="btn-box-displayMode">
+                    <span></span>
+                    显示方式
+                </a>
+                <a href="javascript:;" class="btn-box-sorting">
+                    <span></span>
+                    <span class="sorting-more"></span>
+                    排序
+                </a>
+                <div class="sorting-more-box">
+                    <a href="javascript:;" class="more-box-time">按时间排序</a>
+                    <a href="javascript:;" class="more-box-letter">按字母顺序</a>
+                    <a href="javascript:;" class="more-box-thumbnail">显示略缩图</a>
+                </div>
+            </div>
+        </div>
+        <section id="content">
+            <div class="content-structure fl-l">
+                <section class="content-structure-first fl-l">
+                    <!-- <ul>
+                        <li>
+                            <span class="havatofolder">微云</span>
+                            <ul>
+                                <li>
+                                    <span class="ofolderopen">微云</span>
+                                    <ul></ul>
+                                </li>
+                                <li>
+                                    <span class="ofolderopen">微云</span>
+                                    <ul></ul>
+                                </li>
+                                <li>
+                                    <span class="ofolderup">微云</span>
+                                    <ul></ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </section>
+            </div>
+            <div class="content-item fl-l">
+                <nav class="item-nav">
+                    <div class="noclick" id="allclick"></div>
+                    <div class="nav-box">
+                        <!-- <span>微云</span> -->
+                        <!-- <a href="javascript:;">微云</a>
+                        <span>文档</span> -->
+                    </div>
+                </nav>
+                <div class="item-main">
+                    <section class="havathing">
+                        <!-- <div>
+                            <a href="javascript:;"></a>
+                            <em></em>
+                            <span display="none">新建文件夹</span>
+                            <input type="text" value="" display="block">
+                        </div> -->
+                        <!-- <section class="nothing">
+                            <section class="nothing-bgi"></section>
+                            <section class="nothing-no">暂无文件</section>
+                            <section class="nothing-text">请点击左上角的“上传”按钮添加</section>
+                        </section> -->
+                    </section>
+                    <section class="havafolder">
+                        <dl>
+                            <dt>
+                                <em></em>
+                                <span>
+                                    <div></div>
+                                    <span>JS课程</span>
+                                </span>
+                                <strong>
+                                    <a href="javascript:;" class="havafolder-down"></a>
+                                    <a href="javascript:;" class="havafolder-share"></a>
+                                    <a href="javascript:;" class="havafolder-mobile"></a>
+                                    <a href="javascript:;" class="havafolder-rename"></a>
+                                    <a href="javascript:;" class="havafolder-delete"></a>
+                                </strong>
+                            </dt>
+                            <dd>
+                                <time class="havafolder-date">2018-03-04</time>
+                                <time class="havafolder-time">23:10</time>
+                            </dd>
+                        </dl>
+                    </section>
+                </div>
+            </div>            
+        </section>
+        <section id="other">
+            <div class="alertitem">
+                <div class="item-yes">
+                    <em></em>
+                    <span class="yes-text">删除文件成功</span>
+                </div>
+                <div class="item-choose">
+                    <em></em>
+                    <span class="choose-text">请选择文件</span>
+                </div>
+            </div>
+        </section>
+        <div id="ask">
+            <div class="ask-close">
+                <a href="javascript:;" class="close-btn"></a>
+            </div>
+            <div class="ask-text">
+                <div class="ask-text-left fl-l"></div>
+                <div class="ask-text-right fl-l">
+                    <div class="text-top">确定要删除这个文件夹吗？</div>
+                    <div class="text-bottom">已删除的文件可以在回收站找到</div>
+                </div>
+            </div>
+            <div class="ask-btn">
+                <a href="javascript:;" class="btn-yes">确定</a>
+                <a href="javascript:;" class="btn-no">取消</a>
+            </div>
+        </div>
+        <div id="deletestate">
+            <em class="fl-l"></em>
+            <span class="loadingtext fl-l">正在删除0/15</span>
+        </div>
+        <div id="store">
+            <div class="store-head">
+                <span class="fl-l">选择存储位置</span>
+                <a href="javascript:;" class="store-close fl-r">关闭</a>
+            </div>
+            <div class="store-item">
+                <header class="store-item-name">
+                    <em></em>
+                    <span class="folder-form">微云</span>
+                </header>
+                <div class="store-item-content">
+                    <!-- <span>
+                        <em></em>
+                        <strong></strong> 
+                        <b>微云</b>   
+                    </span>
+                    <ul>
+                        <li>
+                            <span>
+                                <em></em>
+                                <strong></strong> 
+                                <b>微云</b>
+                            </span>
+                            <ul></ul>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="store-btns">
+                <a href="javascript:;" class="store-yes">确定</a>
+                <a href="javascript:;" class="store-no">取消</a>
+            </div>
+        </div> 
+    </section>
+    <section id="mask"></section>
+    <script src="../js/data.js"></script>
+    <script src="../js/fn.js"></script>
+    <script src="../js/wy.js"></script>
+</body>
+</html>

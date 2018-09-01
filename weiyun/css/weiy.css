@@ -1,0 +1,682 @@
+/* reset */
+body,
+dl,
+dd {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* tools */
+.fl-l {
+  float: left;
+}
+.fl-r {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.divsBC {
+  background: #a4cde2;
+  color: #fff;
+}
+.elonclick {
+  background-color: #31bebe;
+}
+.elhaver {
+  background-color: #a9c4e4;
+}
+.notofolder {
+  background: url(../img/nothing.png) no-repeat 20px 10px, url(../img/folder.png) no-repeat 40px 10px;
+  background-size: 14px,16px;
+}
+.havatofolder {
+  background: url(../img/havathing.png) no-repeat 20px 10px, url(../img/infolder.png) no-repeat 40px 10px;
+  background-size: 14px,16px;
+}
+.ofolderopen {
+  background: url(../img/infolder.png) no-repeat 40px 10px;
+}
+.ofolderup {
+  background: url(../img/folder.png) no-repeat 40px 10px;
+}
+.noclick {
+  background: url(../img/noclick.png) no-repeat;
+}
+.click {
+  background: url(../img/click.png) no-repeat;
+}
+.overfolder {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.box {
+  width: 0;
+  height: 0;
+  border: 1px solid #000;
+  background: rgba(170, 195, 233, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mobilespancss {
+  background: url(../img/folder.png) no-repeat 40px 2px;
+}
+.fontcolor {
+  color: red;
+}
+/* main */
+body {
+  background-color: #ece7f3;
+}
+#yun {
+  width: 1200px;
+  height: 600px;
+  background-color: #ffffff;
+  margin: 15px auto;
+  border-radius: 15px;
+  position: relative;
+}
+#yun #head {
+  height: 58px;
+  border-bottom: 2px solid #d1d9db;
+}
+#yun #head .head-logo {
+  width: 135px;
+  height: 58px;
+  margin-left: 28px;
+  text-indent: -9999px;
+  background: url(../img/head-logo.png) no-repeat;
+}
+#yun #head .head-info {
+  height: 32px;
+  margin: 13px 30px;
+}
+#yun #head .head-info .head-info-tab {
+  width: 68px;
+  height: 32px;
+  border-right: 2px solid #e4e5e7;
+}
+#yun #head .head-info .head-info-tab .info-tab-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+  text-indent: -9999px;
+  background: url(../img/head-user.png) no-repeat;
+}
+#yun #head .head-info .head-info-tab .info-tab-more {
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+  background: url(../img/arrowstobottom.png) no-repeat 10px 10px;
+}
+#yun #head .head-info .head-info-set {
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  background: url(../img/set.png) no-repeat;
+  margin: 8px 14px;
+}
+#yun #btn-box {
+  height: 48px;
+  background-color: #ecf1f7;
+  border-bottom: 2px solid #d1d9db;
+}
+#yun #btn-box .btn-box-left {
+  height: 38px;
+  padding-top: 5px;
+  margin-left: 20px;
+}
+#yun #btn-box .btn-box-left .btn-box-download span {
+  background: url(../img/download.png) no-repeat;
+}
+#yun #btn-box .btn-box-left .btn-box-share span {
+  background: url(../img/share.png) no-repeat;
+}
+#yun #btn-box .btn-box-left .btn-box-mobile span {
+  background: url(../img/mobile.png) no-repeat;
+}
+#yun #btn-box .btn-box-left .btn-box-rename span {
+  background: url(../img/rename.png) no-repeat;
+}
+#yun #btn-box .btn-box-left .btn-box-delete span {
+  background: url(../img/delete.png) no-repeat;
+}
+#yun #btn-box .btn-box-left .btn-box-newFolder span {
+  background: url(../img/addfolder.png) no-repeat;
+}
+#yun #btn-box .btn-box-left .btn-box-refresh {
+  text-indent: -9999px;
+  padding: 0 10px;
+}
+#yun #btn-box .btn-box-left .btn-box-refresh span {
+  background: url(../img/refresh.png) no-repeat;
+  margin: 11px 0 0 0;
+}
+#yun #btn-box .btn-box-right {
+  height: 38px;
+  padding-top: 5px;
+  margin-right: 20px;
+  position: relative;
+}
+#yun #btn-box .btn-box-right .btn-box-displayMode {
+  text-indent: -9999px;
+  padding: 0 10px;
+}
+#yun #btn-box .btn-box-right .btn-box-displayMode span {
+  background: url(../img/arrangement.png) no-repeat;
+  margin: 11px 0 0 0;
+  padding-right: 5px;
+}
+#yun #btn-box .btn-box-right .btn-box-sorting {
+  text-indent: -9999px;
+  width: 36px;
+  padding: 0 10px;
+}
+#yun #btn-box .btn-box-right .btn-box-sorting span {
+  background: url(../img/more.png) no-repeat;
+  margin: 11px 0 0 0;
+}
+#yun #btn-box .btn-box-right .btn-box-sorting .sorting-more {
+  width: 11px;
+  height: 6px;
+  margin: 16px 0 0 5px;
+  background: url(../img/head-more.png) no-repeat;
+}
+#yun #btn-box .btn-box-right .sorting-more-box {
+  display: none;
+  position: absolute;
+  top: 43px;
+  right: 7px;
+  width: 130px;
+  height: 120px;
+  border: 2px solid #53b3e3;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#yun #btn-box .btn-box-right .sorting-more-box a {
+  float: left;
+  width: 130px;
+  height: 40px;
+  font: 16px/40px "微软雅黑";
+  color: #000;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-indent: 35px;
+}
+#yun #btn-box .btn-box-right .sorting-more-box .more-box-time {
+  background: url(../img/time.png) no-repeat 10px 13px;
+}
+#yun #btn-box .btn-box-right .sorting-more-box .more-box-letter {
+  background: #a9d9f1 url(../img/order.png) no-repeat 10px 13px;
+  border-radius: 0;
+}
+#yun #btn-box .btn-box-right .sorting-more-box .more-box-thumbnail {
+  background: url(../img/more.png) no-repeat 10px 13px;
+}
+#yun #btn-box a {
+  float: left;
+  height: 36px;
+  font: 14px/36px "微软雅黑";
+  padding: 0 10px 0 15px;
+  color: #000;
+  border: 1px solid #d5d8dd;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+#yun #btn-box a span {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 11px 15px 0 0;
+}
+#yun #content {
+  height: 490px;
+}
+#yun #content .content-structure {
+  width: 258px;
+  height: 490px;
+  border-right: 2px solid #d1d9db;
+  overflow: auto;
+}
+#yun #content .content-structure .content-structure-first {
+  width: 258px;
+  padding-top: 9px;
+  overflow: hidden;
+}
+#yun #content .content-structure .content-structure-first div {
+  float: left;
+  height: 36px;
+}
+#yun #content .content-structure .content-structure-first span {
+  float: left;
+  width: 258px;
+  height: 36px;
+  font: bold 16px/36px "微软雅黑";
+  text-indent: 65px;
+}
+#yun #content .content-structure .content-structure-first ul {
+  float: left;
+  width: 258px;
+}
+#yun #content .content-structure .content-structure-first ul li {
+  float: left;
+}
+#yun #content .content-item {
+  width: 940px;
+  height: 490px;
+}
+#yun #content .content-item .item-nav {
+  height: 48px;
+  border-bottom: 2px solid #d1d9db;
+  font: 18px/48px "微软雅黑";
+}
+#yun #content .content-item .item-nav #allclick {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 16px 11px 0  15px;
+}
+#yun #content .content-item .item-nav .nav-box {
+  float: left;
+  height: 48px;
+}
+#yun #content .content-item .item-nav .nav-box a {
+  float: left;
+  height: 48px;
+  padding: 0 25px;
+  color: #000;
+}
+#yun #content .content-item .item-nav .nav-box span {
+  float: left;
+  height: 48px;
+  padding: 0 30px;
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+#yun #content .content-item .item-main {
+  padding: 20px 20px;
+  height: 400px;
+  position: relative;
+  border-radius: 0 0 15px 0;
+  background-color: #f6f7fb;
+}
+#yun #content .content-item .item-main .havathing {
+  width: 900px;
+  height: 400px;
+  overflow: auto;
+}
+#yun #content .content-item .item-main .havathing div {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 13px 15px;
+  background-color: #ebeff0;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  position: relative;
+}
+#yun #content .content-item .item-main .havathing div a {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  margin: 10px;
+}
+#yun #content .content-item .item-main .havathing div em {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 64px;
+  height: 64px;
+  background: url(../img/bigfolder.png) no-repeat;
+  background-size: 64px 64px;
+  margin: 35px 0 0 7px;
+}
+#yun #content .content-item .item-main .havathing div span {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  font: 14px/20px "微软雅黑";
+  text-align: center;
+  margin-top: 10px;
+}
+#yun #content .content-item .item-main .havathing div input {
+  display: none;
+  position: absolute;
+  left: 23px;
+  top: 110px;
+  padding: 0;
+  width: 100px;
+  height: 20px;
+  font: 14px/20px "微软雅黑";
+  z-index: 99px;
+  text-align: center;
+}
+#yun #content .content-item .item-main .havafolder {
+  width: 900px;
+  height: 400px;
+  display: none;
+  overflow: auto;
+}
+#yun #content .content-item .item-main .havafolder dl {
+  height: 40px;
+  border-bottom: 1px solid #55addb;
+}
+#yun #content .content-item .item-main .havafolder dl dt {
+  float: left;
+  height: 40px;
+}
+#yun #content .content-item .item-main .havafolder dl dt em {
+  float: left;
+  width: 18px;
+  height: 18px;
+  background: url(../img/noClick.png) no-repeat;
+  background-size: 18px;
+  margin: 11px 20px 0 0;
+}
+#yun #content .content-item .item-main .havafolder dl dt span {
+  float: left;
+  height: 40px;
+  margin-right: 140px;
+}
+#yun #content .content-item .item-main .havafolder dl dt span div {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: url(../img/folder.png) no-repeat;
+  background-size: 20px;
+  margin: 10px 10px;
+}
+#yun #content .content-item .item-main .havafolder dl dt span span {
+  float: left;
+  font: 18px/40px "微软雅黑";
+}
+#yun #content .content-item .item-main .havafolder dl dt strong {
+  height: 40px;
+}
+#yun #content .content-item .item-main .havafolder dl dt strong a {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 12px 5px;
+}
+#yun #content .content-item .item-main .havafolder dl dt strong .havafolder-down {
+  background: url(../img/download.png) no-repeat;
+}
+#yun #content .content-item .item-main .havafolder dl dt strong .havafolder-share {
+  background: url(../img/share.png) no-repeat;
+}
+#yun #content .content-item .item-main .havafolder dl dt strong .havafolder-mobile {
+  background: url(../img/mobile.png) no-repeat;
+}
+#yun #content .content-item .item-main .havafolder dl dt strong .havafolder-rename {
+  background: url(../img/rename.png) no-repeat;
+}
+#yun #content .content-item .item-main .havafolder dl dt strong .havafolder-delete {
+  background: url(../img/delete.png) no-repeat;
+}
+#yun #content .content-item .item-main .havafolder dl dd {
+  float: right;
+  height: 40px;
+}
+#yun #content .content-item .item-main .havafolder dl dd time {
+  float: left;
+  height: 40px;
+  font: 14px/40px arial;
+  margin: 0 10px;
+}
+#yun #content .content-item .item-main .nothing {
+  width: 900px;
+  height: 380px;
+}
+#yun #content .content-item .item-main .nothing .nothing-bgi {
+  margin: 20px auto 0;
+  width: 230px;
+  height: 230px;
+  background: url(../img/yun.png) no-repeat;
+  background-size: 100%;
+}
+#yun #content .content-item .item-main .nothing .nothing-no {
+  font: 30px/30px "微软雅黑";
+  color: #adadad;
+  text-align: center;
+  margin: -30px 0 15px;
+}
+#yun #content .content-item .item-main .nothing .nothing-text {
+  font: 24px/30px "微软雅黑";
+  color: #837c7c;
+  text-align: center;
+}
+#yun #other {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+#yun #other em {
+  float: left;
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  margin: 4px 4px 0 0;
+}
+#yun #other div {
+  padding: 0 30px;
+  font: 20px/40px "微软雅黑";
+  color: #fff;
+  border-radius: 20px;
+}
+#yun #other .item-yes {
+  display: none;
+  background-color: #87ce8c;
+}
+#yun #other .item-yes em {
+  background: url(../img/yes.png) no-repeat;
+}
+#yun #other .item-choose {
+  display: none;
+  background-color: #87ce8c;
+}
+#yun #other .item-choose em {
+  background: url(../img/please.png) no-repeat;
+}
+#yun #ask {
+  position: absolute;
+  left: 440px;
+  top: 210px;
+  width: 316px;
+  height: 176px;
+  border: 2px solid #57abd9;
+  border-radius: 10px;
+  background-color: #fff;
+  display: none;
+}
+#yun #ask .ask-close {
+  height: 40px;
+  margin: 10px 0 10px;
+}
+#yun #ask .ask-close a {
+  float: right;
+  width: 23px;
+  height: 23px;
+  background: url(../img/close.png) no-repeat;
+  background-size: 23px;
+  margin-right: 10px;
+}
+#yun #ask .ask-text {
+  height: 60px;
+  margin-bottom: 15px;
+}
+#yun #ask .ask-text .ask-text-left {
+  width: 50px;
+  height: 50px;
+  background: url(../img/yesorno.png) no-repeat;
+  margin: 5px 0 0 30px;
+}
+#yun #ask .ask-text .ask-text-right {
+  width: 200px;
+  height: 60px;
+}
+#yun #ask .ask-text .ask-text-right .text-top {
+  text-align: center;
+  font: 16px/30px "微软雅黑";
+}
+#yun #ask .ask-text .ask-text-right .text-bottom {
+  text-align: center;
+  font: 12px/30px "微软雅黑";
+}
+#yun #ask .ask-btn {
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  padding: 0 70px;
+}
+#yun #ask .ask-btn a {
+  padding: 0 15px;
+  height: 28px;
+  border: 1px solid #55addb;
+  font: 14px/30px "微软雅黑";
+  border-radius: 15px;
+}
+#yun #ask .ask-btn .btn-yes {
+  background-color: #55addb;
+  color: #fff;
+}
+#yun #deletestate {
+  display: none;
+  width: 230px;
+  height: 80px;
+  border: 2px solid #55addb;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 483px;
+  top: 258px;
+}
+#yun #deletestate em {
+  width: 50px;
+  height: 50px;
+  background: url(../img/loading.png) no-repeat;
+  margin: 15px 0 0 20px;
+}
+#yun #deletestate .loadingtext {
+  width: 160px;
+  text-align: center;
+  font: 18px/80px "微软雅黑";
+}
+#yun #store {
+  display: none;
+  width: 410px;
+  height: 420px;
+  border: 2px solid #53b3e3;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+}
+#yun #store .store-head {
+  height: 24px;
+  margin: 15px 0;
+}
+#yun #store .store-head span {
+  font: 18px/24px "微软雅黑";
+  text-indent: 20px;
+}
+#yun #store .store-head a {
+  width: 20px;
+  height: 20px;
+  background: url(../img/close.png) no-repeat;
+  background-size: 20px;
+  text-indent: -9999px;
+  margin-right: 15px;
+}
+#yun #store .store-item {
+  width: 360px;
+  height: 280px;
+  margin: 0 auto 25px;
+}
+#yun #store .store-item .store-item-name {
+  height: 30px;
+}
+#yun #store .store-item .store-item-name em {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: url(../img/folder.png) no-repeat;
+  background-size: 20px;
+  margin: 5px 10px;
+}
+#yun #store .store-item .store-item-name span {
+  float: left;
+  font: 18px/30px "微软雅黑";
+}
+#yun #store .store-item .store-item-content {
+  width: 360px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 1px solid #bee0fa;
+  overflow: auto;
+}
+#yun #store .store-item .store-item-content div {
+  float: left;
+  height: 20px;
+}
+#yun #store .store-item .store-item-content span {
+  float: left;
+  width: 258px;
+  height: 20px;
+  font: bold 14px/20px "微软雅黑";
+  text-indent: 65px;
+  cursor: pointer;
+}
+#yun #store .store-item .store-item-content ul {
+  float: left;
+  width: 258px;
+}
+#yun #store .store-item .store-item-content ul li {
+  float: left;
+}
+#yun #store .store-btns {
+  padding: 0 120px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#yun #store .store-btns a {
+  padding: 0 15px;
+  height: 28px;
+  border: 1px solid #55addb;
+  font: 14px/30px "微软雅黑";
+  border-radius: 15px;
+}
+#yun #store .store-btns .store-yes {
+  background-color: #55addb;
+  color: #fff;
+}
+#mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(80, 78, 78, 0.5);
+}

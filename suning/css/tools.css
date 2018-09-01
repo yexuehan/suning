@@ -1,0 +1,44 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+span{
+	color: #ff9900;
+}
+a{
+	display: inline-block;
+}
+.pl10{
+	padding-left: 10px;
+}
+.mld{
+	margin-left: -1px;
+}
+.mt1{
+	margin-top: -1px;
+}
+.mlf{
+	margin-left: 10px;
+}
+.bto{
+	border-bottom: none;
+}
+#box .nbd{
+	border-right: none;
+}
+#box .nomargin{
+	margin-right:0px;
+}
+#box .m81{
+	margin-bottom: 81px;
+}
+#box .w151{
+	width:150px ;
+}
